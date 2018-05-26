@@ -47,8 +47,8 @@ class App extends React.Component {
       })
     })
   }
-  render () {
-    return (
+  render() {
+    return(
       <div>
         <span>GitHub Fetcher</span>
         <Search onSearch={this.search.bind(this)} fetch={this.searchOnChange.bind(this)}/>

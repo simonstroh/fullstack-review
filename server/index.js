@@ -14,7 +14,8 @@ app.post('/repos', function(req, res) {
   github.getReposByUsername(req.body, function(err, res, data) {
     if (err) console.log(err)
     JSON.parse(data).forEach(item => {
-      database.save(item)
+      var newItem = Object.assign({_id: item.id}, item)
+      database.save(newItem)
     })
   })
   res.end("Posted!")

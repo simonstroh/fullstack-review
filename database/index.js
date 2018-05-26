@@ -3,7 +3,7 @@ mongoose.connect('mongodb://localhost:27017');
 
 let repoSchema = mongoose.Schema({
   // TODO: your schema here!
-  id: Number,
+  _id: Number,
   name: String,
   full_name: String,
   owner: {},
