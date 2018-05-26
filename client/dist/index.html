@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Github Repo Fetcher</title>
+  <title>Robo-Repo Fetcher</title>
   <style>
   input[type=submit] {
     display: block;
@@ -70,7 +70,14 @@
   button:hover {
     background-color: white;
   }
-  span, a {
+  a {
+    text-decoration: none;
+    color: #414141;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  span {
     display: block;
     text-align: center;
     transform: scale(1, 1.5);
@@ -95,6 +102,7 @@
     transform: scale(1, 1.5)
   }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="grit" id="pop-up"><div id="app"></div></div>
